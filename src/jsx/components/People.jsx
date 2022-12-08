@@ -40,7 +40,7 @@ function People() {
 
   return (
     <>
-      <div className="vis_container" ref={visRef}>
+      <div className="people_container" ref={visRef}>
         {
         [...Array(80)].map(() => (
           <span key={uuidv4()}>

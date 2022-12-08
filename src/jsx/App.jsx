@@ -134,7 +134,10 @@ function App() {
           <IsVisible once>
             {(isVisible) => (
               <div className={`content ${isVisible ? 'visible' : ''}`}>
-                <h3>Population hit 8 billion people</h3>
+                <h3>
+                  Population hit
+                  <div className="highlight">8 billion people</div>
+                </h3>
                 <People />
               </div>
 
