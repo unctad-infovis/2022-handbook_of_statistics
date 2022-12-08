@@ -1,7 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, memo } from 'react';
 
 // https://d3js.org/
 import * as d3 from 'd3';
+import { v4 as uuidv4 } from 'uuid';
 
 // https://www.npmjs.com/package/react-is-visible
 import 'intersection-observer';
@@ -41,8 +42,8 @@ function People() {
     <>
       <div className="vis_container" ref={visRef}>
         {
-        [...Array(80)].map((el) => (
-          <span key={el}>
+        [...Array(80)].map(() => (
+          <span key={uuidv4()}>
             <img src={`${(window.location.href.includes('unctad.org')) ? 'https://storage.unctad.org/2022-handbook_of_statistics/' : './'}assets/img/2022-handbook_of_statistics_backperson.png`} alt="Person icon" />
           </span>
         ))
@@ -53,4 +54,4 @@ function People() {
   );
 }
 
-export default People;
+export default memo(People);

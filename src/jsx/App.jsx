@@ -11,6 +11,7 @@ import IsVisible from 'react-is-visible';
 // Load helpers.
 import Arrows from './components/Arrows.jsx';
 import People from './components/People.jsx';
+import NumberAnimation from './components/NumberAnimation.jsx';
 // import roundNr from './helpers/RoundNr.js';
 
 // const appID = '#app-root-2022-handbook_of_statistics';
@@ -57,7 +58,7 @@ function App() {
                     .pasteString('<span class="highlight">2022</span>')
                     .typeString('')
                     .pauseFor(2500)
-                    .typeString('<br /><br />UNCTAD’s<br /><span class="highlight">Handbook of Statistics</span><br />will tell you')
+                    .typeString('<br /><br />UNCTAD’s<div class="highlight">Handbook of Statistics</div>will tell you')
                     .start();
                 }}
               />
@@ -77,10 +78,13 @@ function App() {
           <IsVisible once>
             {(isVisible) => (
               <div className={`content ${isVisible ? 'visible' : ''}`}>
-                <h3>World’s economy slows down</h3>
-                <div className="mockup">+5.7% and 2022 +3.3%</div>
-                <div className="mockup">because merchandise exports goes from +26.5% to +13.8%</div>
-                <div className="mockup">because services exports goes +17.2% to 14.6%</div>
+                <h3>
+                  <span className="highlight">World’s economy </span>
+                  {' '}
+                  slows down
+                </h3>
+                <NumberAnimation labels={['2021', '2022']} values={['+5.7%', '+3.3%']} />
+                <p>The report shows that growth of merchandise exports will decline from a 26.5% recovery in 2021 to 13.8% in 2022 while that of services exports will fall from 17.2% growth to 14.6%</p>
               </div>
             )}
           </IsVisible>
@@ -92,7 +96,11 @@ function App() {
           <IsVisible once>
             {(isVisible) => (
               <div className={`content ${isVisible ? 'visible' : ''}`}>
-                <h3>World’s economy slows down</h3>
+                <h3>
+                  <span className="highlight">World’s economy </span>
+                  {' '}
+                  slows down
+                </h3>
                 <p>These projections for 2022, known as nowcasts, are based on an analysis of high-frequency statistics on a range of indicators using machine learning techniques.</p>
                 <p>“Timely and quality data are critical now more than ever as concurrent global crises test our resilience,” UNCTAD Secretary-General Rebeca Grynspan said. “These statistics will help countries take evidence-based policy measures to cushion the blow.”</p>
               </div>
@@ -207,7 +215,6 @@ function App() {
               </div>
             )}
           </IsVisible>
-          <Arrows />
         </div>
       </div>
       <noscript>Your browser does not support JavaScript!</noscript>
