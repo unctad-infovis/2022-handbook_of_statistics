@@ -10,6 +10,7 @@ import IsVisible from 'react-is-visible';
 
 // Load helpers.
 import Arrows from './components/Arrows.jsx';
+import People from './components/People.jsx';
 // import roundNr from './helpers/RoundNr.js';
 
 // const appID = '#app-root-2022-handbook_of_statistics';
@@ -126,7 +127,9 @@ function App() {
             {(isVisible) => (
               <div className={`content ${isVisible ? 'visible' : ''}`}>
                 <h3>Population hit 8 billion people</h3>
+                <People />
               </div>
+
             )}
           </IsVisible>
           <Arrows />
