@@ -56,13 +56,13 @@ function App() {
                 }}
                 onInit={(typewriter) => {
                   typewriter.typeString('What happened in the world in ')
-                    .pauseFor(300)
+                    .pauseFor(50)
                     .pasteString('<span class="highlight">2021</span>')
                     .typeString(' and ')
-                    .pauseFor(100)
+                    .pauseFor(50)
                     .pasteString('<span class="highlight">2022</span>')
                     .typeString('')
-                    .pauseFor(2500)
+                    .pauseFor(1500)
                     .typeString('<br /><br />UNCTAD’s<br /><span class="highlight">Handbook of Statistics</span><br />will tell you')
                     .start();
                 }}
