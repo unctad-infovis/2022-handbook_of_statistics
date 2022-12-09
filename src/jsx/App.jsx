@@ -7,6 +7,9 @@ import Typewriter from 'typewriter-effect';
 // https://www.npmjs.com/package/react-is-visible
 import 'intersection-observer';
 import IsVisible from 'react-is-visible';
+// https://www.npmjs.com/package/react-countup
+import CountUp from 'react-countup';
+import easingFn from './helpers/EasingFn.js';
 
 // Load helpers.
 import Arrows from './components/Arrows.jsx';
@@ -45,6 +48,8 @@ function App() {
         <div className="content_container">
           <div className="content visible">
             <h2>
+              <br />
+              <br />
               <Typewriter
                 options={{
                   delay: 'natural' // or milliseconds
@@ -58,7 +63,7 @@ function App() {
                     .pasteString('<span class="highlight">2022</span>')
                     .typeString('')
                     .pauseFor(2500)
-                    .typeString('<br /><br />UNCTAD’s<div class="highlight">Handbook of Statistics</div>will tell you')
+                    .typeString('<br /><br />UNCTAD’s<br /><span class="highlight">Handbook of Statistics</span><br />will tell you')
                     .start();
                 }}
               />
@@ -79,30 +84,13 @@ function App() {
             {(isVisible) => (
               <div className={`content ${isVisible ? 'visible' : ''}`}>
                 <h3>
-                  <span className="highlight">World’s economy </span>
+                  <span className="highlight">World’s economic growth</span>
                   {' '}
                   slows down
                 </h3>
-                <NumberAnimation labels={['2021', '2022']} values={['+5.7%', '+3.3%']} />
-                <p>The report shows that growth of merchandise exports will decline from a 26.5% recovery in 2021 to 13.8% in 2022 while that of services exports will fall from 17.2% growth to 14.6%</p>
-              </div>
-            )}
-          </IsVisible>
-          <Arrows />
-        </div>
-      </div>
-      <div className="content_wrapper">
-        <div className="content_container">
-          <IsVisible once>
-            {(isVisible) => (
-              <div className={`content ${isVisible ? 'visible' : ''}`}>
-                <h3>
-                  <span className="highlight">World’s economy </span>
-                  {' '}
-                  slows down
-                </h3>
+                <NumberAnimation labels={['2021', '2022']} prefix="+" suffix="%" values={[5.7, 3.3]} />
                 <p>These projections for 2022, known as nowcasts, are based on an analysis of high-frequency statistics on a range of indicators using machine learning techniques.</p>
-                <p>“Timely and quality data are critical now more than ever as concurrent global crises test our resilience,” UNCTAD Secretary-General Rebeca Grynspan said. “These statistics will help countries take evidence-based policy measures to cushion the blow.”</p>
+                <a href="https://hbs.unctad.org/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
               </div>
             )}
           </IsVisible>
@@ -117,9 +105,13 @@ function App() {
           <IsVisible once>
             {(isVisible) => (
               <div className={`content ${isVisible ? 'visible' : ''}`}>
-                <h3>Prices go up</h3>
-                <div className="mockup">Price index grew +55%</div>
-                <div className="mockup">Mostly because of fuel (22%)</div>
+                <h3>
+                  <span className="highlight">Commodity prices</span>
+                  {' '}
+                  rose in 2021
+                </h3>
+                <h3><span className="highlight">{isVisible && (<CountUp easingFn={easingFn} start={0} delay={0.7} end={55} decimals={0} duration={4} separator="," useEasing prefix="+" suffix="%" />)}</span></h3>
+                <a href="https://hbs.unctad.org/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
               </div>
             )}
           </IsVisible>
@@ -137,10 +129,11 @@ function App() {
                 <h3>
                   Population hit
                   <div className="highlight">8 billion people</div>
+                  in November 2022
                 </h3>
                 <People />
+                <a href="https://hbs.unctad.org/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
               </div>
-
             )}
           </IsVisible>
           <Arrows />
@@ -154,7 +147,13 @@ function App() {
           <IsVisible once>
             {(isVisible) => (
               <div className={`content ${isVisible ? 'visible' : ''}`}>
-                <h3>Trade came back because of fuel</h3>
+                <h3>
+                  <span className="highlight">Merchandise trade</span>
+                  {' '}
+                  bounced back after COVID-19 decline
+                </h3>
+                <NumberAnimation labels={['2020', '2021']} prefix="+" suffix="%" values={[-7.2, 26.5]} />
+                <a href="https://hbs.unctad.org/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
               </div>
             )}
           </IsVisible>
@@ -169,7 +168,15 @@ function App() {
           <IsVisible once>
             {(isVisible) => (
               <div className={`content ${isVisible ? 'visible' : ''}`}>
-                <h3>But trade in services did not rebound</h3>
+                <h3>
+                  The upswing of
+                  {' '}
+                  <span className="highlight">trade in services</span>
+                  {' '}
+                  did not compensate for the drop in 2020
+                </h3>
+                <NumberAnimation labels={['2020', '2021']} prefix="+" suffix="%" values={[-17.7, 17.2]} />
+                <a href="https://hbs.unctad.org/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
               </div>
             )}
           </IsVisible>
@@ -184,7 +191,12 @@ function App() {
           <IsVisible once>
             {(isVisible) => (
               <div className={`content ${isVisible ? 'visible' : ''}`}>
-                <h3>Travel did not reach pre-covid situation</h3>
+                <h3>
+                  <span className="highlight">Trade in travel</span>
+                  {' '}
+                  has not recover to pre-COVIV-19
+                </h3>
+                <a href="https://hbs.unctad.org/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
               </div>
             )}
           </IsVisible>
@@ -199,7 +211,13 @@ function App() {
           <IsVisible once>
             {(isVisible) => (
               <div className={`content ${isVisible ? 'visible' : ''}`}>
-                <h3>LDCs are bad</h3>
+                <h3>
+                  <span className="highlight">Least developed countries’</span>
+                  {' '}
+                  GDP growth was slow
+                </h3>
+                <NumberAnimation labels={['LDCs', 'Global']} prefix="+" suffix="%" values={[2.0, 5.7]} />
+                <a href="https://hbs.unctad.org/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
               </div>
             )}
           </IsVisible>
@@ -214,7 +232,7 @@ function App() {
           <IsVisible once>
             {(isVisible) => (
               <div className={`content ${isVisible ? 'visible' : ''}`}>
-                <h3>See magnificient graphs in the UNCTAD e-Handbook of Statistics 2022. You have maps and charts and stuff.</h3>
+                <h3><a href="https://hbs.unctad.org/">See the full interactive version of UNCTAD e-Handbook of Statistics 2022 which offers maps and charts</a></h3>
               </div>
             )}
           </IsVisible>

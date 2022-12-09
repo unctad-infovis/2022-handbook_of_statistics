@@ -44,7 +44,7 @@ function People() {
         {
         [...Array(80)].map(() => (
           <span key={uuidv4()}>
-            <img src={`${(window.location.href.includes('unctad.org')) ? 'https://storage.unctad.org/2022-handbook_of_statistics/' : './'}assets/img/2022-handbook_of_statistics_backperson.png`} alt="Person icon" />
+            <img src={`${(window.location.href.includes('unctad.org')) ? 'https://storage.unctad.org/2022-handbook_of_statistics/' : './'}assets/img/2022-handbook_of_statistics_person.png`} alt="Person icon" />
           </span>
         ))
       }

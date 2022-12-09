@@ -39,11 +39,12 @@ body {
       box-shadow: 0 3px 12px rgb(255 255 255 / 0.9);
       box-sizing: border-box;
       display: flex;
+      border-radius: 50%;
       flex-direction: column;
       justify-content: center;
       margin: 0 20px;
-      max-width: 600px;
-      min-height: 600px;
+      max-width: 650px;
+      min-height: 650px;
       padding: 20px;
       text-align: center;
       width: 100%;
@@ -54,7 +55,7 @@ body {
         flex-grow: 2;
         justify-content: center;
         margin: auto auto;
-        max-width: 510px;
+        max-width: 480px;
         opacity: 0;
         text-align: center;
         width: 100%;
@@ -91,31 +92,57 @@ body {
           font-size: 20px;
           line-height: 26px;
         }
+        a {
+          color: #222;
+          &.readmore {
+            background-color: #004987;
+            border-radius: 4px;
+            border: 1px solid #004987;
+            color: #222;
+            color: #fff;
+            padding: 6px 8px;
+            text-decoration: none;
+            text-transform: uppercase;
+            &:hover {
+              background-color: #fff;
+              border: 1px solid #004987;
+              color: #004987;
+            }
+          }
+        }
         .numbers_container {
-          width: 100%;
+          align-items: center;
           display: flex;
           flex-direction: row;
           justify-content: space-around;
+          margin: 0 0 20px 0;
+          width: 100%;
           .numbers_wrapper {
             font-size: 40px;
             .number_label {
+              border-bottom: 1px solid @unbluetext;
               color: @unbluetext;
               font-size: 40px;
+              font-weight: 400;
               line-height: 42px;
               margin-bottom: 5px;
-              border-bottom: 1px solid @unbluetext;
-              font-weight: 400;
             }
             .number_value {
-              vertical-align: middle;
+              color: @unbluetext;
+              font-weight: 600;
               line-height: 40px;
-              color: @ungreentext;
-              font-weight: 400;
+              vertical-align: middle;
+            }
+          }
+          .arrow_indicator_wrapper {
+            transform: rotate(25deg);
+            img {
+              width: 75px;
             }
           }
         }
         .people_container {
-          margin: 0 auto;
+          margin: 0 auto 20px auto;
           max-width: 400px;
           opacity: 1;
           span {
@@ -123,7 +150,6 @@ body {
             align-items: center;
             background-color: transparent;
             border: 0;
-            cursor: pointer;
             display: inline-flex;
             font-size: 0;
             height: 38px;
@@ -131,6 +157,7 @@ body {
             margin: 0 2px;
             position: relative;
             transition: transform 0.2s ease-in-out;
+            user-select: none;
             width: 16px;
             img {
               box-sizing: content-box;
@@ -152,7 +179,7 @@ body {
       }
       .unctad_logo_container {
         img {
-          width: 120px;
+          width: 80px;
         }
       }
     }
