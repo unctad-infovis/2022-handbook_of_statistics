@@ -19,7 +19,7 @@ function NumberAnimation({
         <div className="number_value" style={{ fontSize: `${Math.max((Math.abs(values[0]) / divider) * 100, 70)}%` }}>
           <IsVisible once>
             {(isVisible) => (
-              <div>
+              <div className={(values[0] < 0) ? 'negative' : ''}>
                 {isVisible && (<CountUp easingFn={easingFn} start={0} delay={0.7} end={values[0]} decimals={1} duration={4} separator="," useEasing prefix={(values[0] > 0) ? prefix : ''} suffix={suffix} />)}
               </div>
             )}

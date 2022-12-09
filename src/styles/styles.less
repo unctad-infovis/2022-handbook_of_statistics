@@ -29,6 +29,38 @@ body {
     scroll-snap-align: center;
     width: 100%;
     z-index: 2;
+    &.content_wrapper_last {
+      .content_container {
+        background-color: @unblue;
+        box-shadow: 0 3px 12px rgb(0 158 219 / 0.9);
+        .content {
+          a {
+            color: #fff;
+            text-decoration: none;
+          }
+          .highlight {
+            color: #000;
+          }
+          a.readmore {
+            background-color: #fff;
+            border-radius: 4px;
+            border: 1px solid #fff;
+            color: @unbluetext;
+            display: block;
+            width: 150px;
+            margin-bottom: 10px;
+            padding: 6px 8px;
+            text-decoration: none;
+            text-transform: uppercase;
+            &:hover {
+              background-color: @unbluetext;
+              border: 1px solid @unbluetext;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
     @supports (-webkit-touch-callout: none) {
       background-attachment: scroll;
       background-position: center 0;
@@ -77,18 +109,19 @@ body {
             font-weight: 500;
           }
           .highlight {
-            font-weight: 500;
+            font-weight: 600;
             color: @unbluetext;
           }
         }
         h3 {
           font-family: 'Roboto Serif';
+          font-size: 40px;
           font-weight: 500;
-          font-size: 50px;
-          line-height: 54px;
-          margin: 0 0 20px 0;
+          line-height: 44px;
+          margin: 0 auto 20px auto;
+          max-width: 460px;
           .highlight {
-            font-weight: 500;
+            font-weight: 600;
             color: @unbluetext;
           }
         }
@@ -100,20 +133,11 @@ body {
         }
         a {
           color: #222;
-          &.readmore {
-            background-color: @unbluetext;
-            border-radius: 4px;
-            border: 1px solid @unbluetext;
-            color: #222;
-            color: #fff;
-            padding: 6px 8px;
-            text-decoration: none;
-            text-transform: uppercase;
-            &:hover {
-              background-color: #fff;
-              border: 1px solid @unbluetext;
-              color: @unbluetext;
-            }
+        }
+        .icon_container {
+          margin-bottom: 20px;
+          img {
+            width: 100px;
           }
         }
         .numbers_container {
@@ -143,15 +167,18 @@ body {
             }
             .number_value {
               color: @unbluetext;
-              font-weight: 400;
+              font-weight: 500;
               letter-spacing: -0.05em;
               line-height: 100%;
               margin-bottom: 5px;
               width: 100%;
               div {
-                display: flex;
                 align-items: flex-end;
+                display: flex;
                 justify-content: center;
+                &.negative {
+                  color: @unredtext;
+                }
               }
             }
           }
@@ -198,22 +225,42 @@ body {
           margin-bottom: 10px;
         }
       }
-      .source {
+      .bottom {
         bottom: 20px;
-        color: rgba(0, 0, 0, 0.8);
-        font-size: 14px;
-        font-weight: 300;
-        max-width: 230px;
         position: absolute;
-        &:before {
-          font-style: italic;
-          content: 'Source: ';
+        a.readmore {
+          background-color: @unbluetext;
+          border-radius: 4px;
+          border: 1px solid @unbluetext;
+          color: #222;
+          color: #fff;
+          display: block;
+          margin-bottom: 10px;
+          padding: 6px 8px;
+          text-decoration: none;
+          text-transform: uppercase;
+          &:hover {
+            background-color: #fff;
+            border: 1px solid @unbluetext;
+            color: @unbluetext;
+          }
+        }
+        .source {
+          color: rgba(0, 0, 0, 0.8);
+          font-size: 14px;
+          font-weight: 300;
+          max-width: 230px;
+          &:before {
+            font-style: italic;
+            content: 'Source: ';
+          }
         }
       }
       .infograph_container {
         margin-bottom: 20px;
         img {
-          width: 80%;
+          width: 100%;
+          max-width: 260px;
         }
       }
       .unctad_logo_container {
