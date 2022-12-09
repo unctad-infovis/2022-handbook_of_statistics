@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Serif:300,600.css');
-@import url('https://fonts.googleapis.com/css?family=Roboto:300.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Serif:100,500.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500.css');
 html,
 body {
   scroll-snap-type: y mandatory;
@@ -35,6 +35,7 @@ body {
     }
     .content_container {
       align-items: center;
+      position: relative;
       background-color: #f4f3f3;
       box-shadow: 0 3px 12px rgb(255 255 255 / 0.9);
       box-sizing: border-box;
@@ -52,10 +53,9 @@ body {
         align-items: center;
         display: flex;
         flex-direction: column;
-        flex-grow: 2;
         justify-content: center;
         margin: auto auto;
-        max-width: 480px;
+        max-width: 490px;
         opacity: 0;
         text-align: center;
         width: 100%;
@@ -66,24 +66,29 @@ body {
           transition-property: opacity;
         }
         h2 {
+          color: rgba(0, 0, 0, 0.8);
           font-family: 'Roboto Serif';
           font-size: 40px;
-          font-weight: 300;
+          font-weight: 100;
           line-height: 44px;
           margin: 0 0 20px 0;
+          strong {
+            color: #000;
+            font-weight: 500;
+          }
           .highlight {
-            font-weight: 600;
+            font-weight: 500;
             color: @unbluetext;
           }
         }
         h3 {
           font-family: 'Roboto Serif';
-          font-weight: 400;
+          font-weight: 500;
           font-size: 50px;
           line-height: 54px;
           margin: 0 0 20px 0;
           .highlight {
-            font-weight: 600;
+            font-weight: 500;
             color: @unbluetext;
           }
         }
@@ -91,13 +96,14 @@ body {
           font-weight: 300;
           font-size: 20px;
           line-height: 26px;
+          margin: 0 0 20px 0;
         }
         a {
           color: #222;
           &.readmore {
-            background-color: #004987;
+            background-color: @unbluetext;
             border-radius: 4px;
-            border: 1px solid #004987;
+            border: 1px solid @unbluetext;
             color: #222;
             color: #fff;
             padding: 6px 8px;
@@ -105,33 +111,48 @@ body {
             text-transform: uppercase;
             &:hover {
               background-color: #fff;
-              border: 1px solid #004987;
-              color: #004987;
+              border: 1px solid @unbluetext;
+              color: @unbluetext;
             }
           }
         }
         .numbers_container {
-          align-items: center;
+          align-items: flex-end;
           display: flex;
           flex-direction: row;
           justify-content: space-around;
           margin: 0 0 20px 0;
           width: 100%;
           .numbers_wrapper {
-            font-size: 40px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            font-size: 60px;
+            justify-content: flex-end;
+            width: 146px;
             .number_label {
-              border-bottom: 1px solid @unbluetext;
-              color: @unbluetext;
+              background-color: #e3edf6;
+              box-sizing: border-box;
+              color: #000;
               font-size: 40px;
-              font-weight: 400;
+              font-weight: 500;
               line-height: 42px;
               margin-bottom: 5px;
+              padding: 3px 10px;
+              width: 100%;
             }
             .number_value {
               color: @unbluetext;
-              font-weight: 600;
-              line-height: 40px;
-              vertical-align: middle;
+              font-weight: 400;
+              letter-spacing: -0.05em;
+              line-height: 100%;
+              margin-bottom: 5px;
+              width: 100%;
+              div {
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+              }
             }
           }
           .arrow_indicator_wrapper {
@@ -175,6 +196,24 @@ body {
           color: @unredtext;
           font-style: italic;
           margin-bottom: 10px;
+        }
+      }
+      .source {
+        bottom: 20px;
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 14px;
+        font-weight: 300;
+        max-width: 230px;
+        position: absolute;
+        &:before {
+          font-style: italic;
+          content: 'Source: ';
+        }
+      }
+      .infograph_container {
+        margin-bottom: 20px;
+        img {
+          width: 80%;
         }
       }
       .unctad_logo_container {

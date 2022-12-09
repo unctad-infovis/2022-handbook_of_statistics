@@ -1,4 +1,4 @@
-import React, { /* useState, */useEffect } from 'react';
+import React, { /* useState, */ } from 'react';
 import '../styles/styles.less';
 
 // https://www.npmjs.com/package/typewriter-effect
@@ -20,31 +20,12 @@ import NumberAnimation from './components/NumberAnimation.jsx';
 // const appID = '#app-root-2022-handbook_of_statistics';
 
 function App() {
-  // Data states.
-  // const [data, setData] = useState(false);
-
-  useEffect(() => {
-    // const data_file = (window.location.href.includes('unctad.org')) ? '/sites/default/files/data-file/2022-handbook_of_statistics.json' : './assets/data/data.json';
-    try {
-      // fetch(data_file)
-      //   .then((response) => {
-      //     if (!response.ok) {
-      //       throw Error(response.statusText);
-      //     }
-      //     return response.text();
-      //   })
-      //   .then(body => setData(JSON.parse(body)));
-    } catch (error) {
-      console.error(error);
-    }
-  }, []);
-
   return (
     <div className="app">
       {/** ******
         Page 1
       ******** */}
-      <div className="content_wrapper">
+      <div className="content_wrapper content_wrapper_1">
         <div className="content_container">
           <div className="content visible">
             <h2>
@@ -63,86 +44,102 @@ function App() {
                     .pasteString('<span class="highlight">2022</span>')
                     .typeString('')
                     .pauseFor(1500)
-                    .typeString('<br /><br />UNCTAD’s<br /><span class="highlight">Handbook of Statistics</span><br />will tell you')
+                    .typeString('<br /><br /><strong>UNCTAD’s<br /><span class="highlight">Handbook of Statistics</span><br />will tell you</strong>')
                     .start();
                 }}
               />
             </h2>
           </div>
+          <div className="infograph_container">
+            <img className="infograph" src={`${(window.location.href.includes('unctad.org')) ? 'https://storage.unctad.org/2022-handbook_of_statistics/' : './'}assets/img/2022-handbook_of_statistics_1.png`} alt="Infograph" />
+          </div>
           <div className="unctad_logo_container">
             <img src="https://unctad.org/sites/default/files/2022-11/unctad_logo.svg" alt="UNCTAD logo" />
           </div>
         </div>
-        <Arrows />
+        <Arrows next="2" />
       </div>
       {/** ******
         Page 2
       ******** */}
-      <div className="content_wrapper">
+      <div className="content_wrapper content_wrapper_2">
         <div className="content_container">
           <IsVisible once>
             {(isVisible) => (
-              <div className={`content ${isVisible ? 'visible' : ''}`}>
-                <h3>
-                  <span className="highlight">World’s economic growth</span>
-                  {' '}
-                  slows down
-                </h3>
-                <NumberAnimation labels={['2021', '2022']} prefix="+" suffix="%" values={[5.7, 3.3]} />
-                <p>These projections for 2022, known as nowcasts, are based on an analysis of high-frequency statistics on a range of indicators using machine learning techniques.</p>
-                <a href="https://hbs.unctad.org/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-              </div>
+              <>
+                <div className={`content ${isVisible ? 'visible' : ''}`}>
+                  <h3>
+                    <span className="highlight">
+                      Global economy
+                    </span>
+                    {' '}
+                    will slow in 2022
+                  </h3>
+                  <NumberAnimation labels={['2021', '2022']} prefix="+" suffix="%" values={[5.7, 3.3]} />
+                  <p>Projections shows that trade in both goods and services will slowdown.</p>
+                  <a href="https://hbs.unctad.org/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
+                </div>
+                <div className="source">World’s real GDP, 2022 is a prediction based on UNCTAD Nowcast</div>
+              </>
             )}
           </IsVisible>
-          <Arrows />
         </div>
+        <Arrows next="3" />
       </div>
       {/** ******
         Page 3
       ******** */}
-      <div className="content_wrapper">
+      <div className="content_wrapper content_wrapper_3">
         <div className="content_container">
           <IsVisible once>
             {(isVisible) => (
-              <div className={`content ${isVisible ? 'visible' : ''}`}>
-                <h3>
-                  <span className="highlight">Commodity prices</span>
-                  {' '}
-                  rose in 2021
-                </h3>
-                <h3><span className="highlight">{isVisible && (<CountUp easingFn={easingFn} start={0} delay={0.7} end={55} decimals={0} duration={4} separator="," useEasing prefix="+" suffix="%" />)}</span></h3>
-                <a href="https://hbs.unctad.org/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-              </div>
+              <>
+                <div className={`content ${isVisible ? 'visible' : ''}`}>
+                  <h3>
+                    <span className="highlight">Commodity prices</span>
+                    {' '}
+                    soared in 2021
+                  </h3>
+                  <h3><span className="highlight">{isVisible && (<CountUp easingFn={easingFn} start={0} delay={0.7} end={55} decimals={0} duration={4} separator="," useEasing prefix="+" suffix="%" />)}</span></h3>
+                  <p>Fuels accounted for 22 percentage points of the growth.</p>
+                  <a href="https://hbs.unctad.org/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
+                </div>
+                <div className="source">The prices of primary commodities</div>
+              </>
             )}
           </IsVisible>
-          <Arrows />
         </div>
+        <Arrows next="4" />
       </div>
       {/** ******
         Page 4
       ******** */}
-      <div className="content_wrapper">
+      <div className="content_wrapper content_wrapper_4">
         <div className="content_container">
           <IsVisible once>
             {(isVisible) => (
-              <div className={`content ${isVisible ? 'visible' : ''}`}>
-                <h3>
-                  Population hit
-                  <div className="highlight">8 billion people</div>
-                  in November 2022
-                </h3>
-                <People />
-                <a href="https://hbs.unctad.org/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-              </div>
+              <>
+                <div className={`content ${isVisible ? 'visible' : ''}`}>
+                  <h3>
+                    <span className="highlight">Population</span>
+                    {' '}
+                    hit 8 billion people in November 2022
+                  </h3>
+                  <People />
+                  <p>But the growth has been declining since late 1980s.</p>
+                  <a href="https://hbs.unctad.org/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
+                </div>
+                <div className="source">The global population</div>
+              </>
             )}
           </IsVisible>
-          <Arrows />
         </div>
+        <Arrows next="5" />
       </div>
       {/** ******
         Page 5
       ******** */}
-      <div className="content_wrapper">
+      <div className="content_wrapper content_wrapper_5">
         <div className="content_container">
           <IsVisible once>
             {(isVisible) => (
@@ -150,20 +147,21 @@ function App() {
                 <h3>
                   <span className="highlight">Merchandise trade</span>
                   {' '}
-                  bounced back after COVID-19 decline
+                  bounced back after COVID-19
                 </h3>
                 <NumberAnimation labels={['2020', '2021']} prefix="+" suffix="%" values={[-7.2, 26.5]} />
+                <p>The growth was largely driven by fuels which amounted 72%</p>
                 <a href="https://hbs.unctad.org/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
               </div>
             )}
           </IsVisible>
-          <Arrows />
         </div>
+        <Arrows next="6" />
       </div>
       {/** ******
         Page 6
       ******** */}
-      <div className="content_wrapper">
+      <div className="content_wrapper content_wrapper_6">
         <div className="content_container">
           <IsVisible once>
             {(isVisible) => (
@@ -180,13 +178,13 @@ function App() {
               </div>
             )}
           </IsVisible>
-          <Arrows />
         </div>
+        <Arrows next="7" />
       </div>
       {/** ******
         Page 7
       ******** */}
-      <div className="content_wrapper">
+      <div className="content_wrapper content_wrapper_7">
         <div className="content_container">
           <IsVisible once>
             {(isVisible) => (
@@ -200,13 +198,13 @@ function App() {
               </div>
             )}
           </IsVisible>
-          <Arrows />
         </div>
+        <Arrows next="8" />
       </div>
       {/** ******
         Page 8
       ******** */}
-      <div className="content_wrapper">
+      <div className="content_wrapper content_wrapper_8">
         <div className="content_container">
           <IsVisible once>
             {(isVisible) => (
@@ -221,18 +219,18 @@ function App() {
               </div>
             )}
           </IsVisible>
-          <Arrows />
         </div>
+        <Arrows next="9" />
       </div>
       {/** ******
         Page 9
       ******** */}
-      <div className="content_wrapper">
+      <div className="content_wrapper content_wrapper_9">
         <div className="content_container">
           <IsVisible once>
             {(isVisible) => (
               <div className={`content ${isVisible ? 'visible' : ''}`}>
-                <h3><a href="https://hbs.unctad.org/">See the full interactive version of UNCTAD e-Handbook of Statistics 2022 which offers maps and charts</a></h3>
+                <h3><a href="https://hbs.unctad.org/">See the e-version of the Handbook. Get the data. Interact with the maps and charts.</a></h3>
               </div>
             )}
           </IsVisible>
