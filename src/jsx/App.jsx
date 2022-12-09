@@ -150,7 +150,7 @@ function App() {
                   bounced back after COVID-19
                 </h3>
                 <NumberAnimation labels={['2020', '2021']} prefix="+" suffix="%" values={[-7.2, 26.5]} />
-                <p>The growth was largely driven by fuels which amounted 72%</p>
+                <p>The growth was largely driven by fuels (+72%).</p>
                 <a href="https://hbs.unctad.org/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
               </div>
             )}
