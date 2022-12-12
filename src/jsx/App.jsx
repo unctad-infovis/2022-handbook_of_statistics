@@ -381,7 +381,7 @@ function App() {
                     </a>
                   </h3>
                   <a href="https://hbs.unctad.org/" onClick={() => track('Click', 'card_11_link')} className="readmore" target="_blank" rel="noreferrer">Handbook of Statistics 2022</a>
-                  <a href="https://www.youtube.com/watch?v=goQ_gEP3ihk" onClick={() => track('Click', 'card_11_link')} className="readmore" target="_blank" rel="noreferrer">Video</a>
+                  <a href="https://www.youtube.com/watch?v=goQ_gEP3ihk" onClick={() => track('Click', 'video_link')} className="readmore" target="_blank" rel="noreferrer">Video</a>
                 </div>
               </>
             )}
