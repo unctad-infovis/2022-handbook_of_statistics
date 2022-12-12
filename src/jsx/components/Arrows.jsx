@@ -16,7 +16,7 @@ function Arrows({ next }) {
       align: {
         left: 0,
         leftOffset: 0,
-        lockX: false,
+        lockX: true,
         lockY: false,
         top: 0,
         topOffset: 0
