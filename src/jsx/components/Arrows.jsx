@@ -12,20 +12,18 @@ import scrollIntoView from 'scroll-into-view';
 function Arrows({ next }) {
   const anchorClick = (target) => {
     // track(name);
-    setTimeout(() => {
-      scrollIntoView(document.querySelector(target), {
-        align: {
-          left: 0,
-          leftOffset: 0,
-          lockX: false,
-          lockY: false,
-          top: 0,
-          topOffset: 0
-        },
-        cancellable: false,
-        time: 1000
-      });
-    }, 50);
+    scrollIntoView(document.querySelector(target), {
+      align: {
+        left: 0,
+        leftOffset: 0,
+        lockX: false,
+        lockY: false,
+        top: 0,
+        topOffset: 0
+      },
+      cancellable: false,
+      time: 0
+    });
   };
 
   return (
