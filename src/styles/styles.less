@@ -26,9 +26,11 @@ body {
     min-height: 100vh;
     padding: 100px 20px;
     position: relative;
-    scroll-snap-align: center;
     width: 100%;
     z-index: 2;
+    @media all and (min-width: 650px) {
+      scroll-snap-align: center;
+    }
     &.content_wrapper_last {
       .content_container {
         background-color: @unblue;
@@ -72,7 +74,6 @@ body {
       box-shadow: 0 3px 12px rgb(255 255 255 / 0.9);
       box-sizing: border-box;
       display: flex;
-      border-radius: 50%;
       flex-direction: column;
       justify-content: center;
       margin: 0 20px;
@@ -81,6 +82,9 @@ body {
       padding: 20px;
       text-align: center;
       width: 100%;
+      @media all and (min-width: 650px) {
+        border-radius: 50%;
+      }
       .content {
         align-items: center;
         display: flex;
@@ -100,7 +104,7 @@ body {
         h2 {
           color: rgba(0, 0, 0, 0.8);
           font-family: 'Roboto Serif';
-          font-size: 40px;
+          font-size: 36px;
           font-weight: 100;
           line-height: 44px;
           margin: 0 0 20px 0;

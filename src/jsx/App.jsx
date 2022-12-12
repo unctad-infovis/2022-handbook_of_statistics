@@ -81,7 +81,7 @@ function App() {
                   <p>Projection show that trade in both goods and services will slowdown. Growth in merchandise exports is expected to decline by half.</p>
                 </div>
                 <div className="bottom">
-                  <a href="https://hbs.unctad.org/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
+                  <a href="https://hbs.unctad.org/gross-domestic-product/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
                   <div className="source">World’s real GDP, 2022 is a prediction based on UNCTAD Nowcast</div>
                 </div>
               </>
@@ -104,14 +104,11 @@ function App() {
                     {' '}
                     of developing economies increased
                   </h3>
-                  <p>Developed - 8.0 trillion - Developing</p>
-                  <p>Developed - 8.5 trillion - Developed</p>
-                  <p>Developing - 5.4 trillion - Developing</p>
                   <p>The increase was mirrored by a widening trade deficit for developed economies. The surplus increased especially in Africa.</p>
                 </div>
                 <div className="bottom">
-                  <a href="https://hbs.unctad.org/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-                  <div className="source">???</div>
+                  <a href="https://hbs.unctad.org/international-merchandise-trade/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
+                  <div className="source">UNCTAD</div>
                 </div>
               </>
             )}
@@ -122,7 +119,7 @@ function App() {
       {/** ******
         Page 4
       ******** */}
-      <div className="content_wrapper content_wrapper_6">
+      <div className="content_wrapper content_wrapper_4">
         <div className="content_container">
           <IsVisible once>
             {(isVisible) => (
@@ -136,8 +133,8 @@ function App() {
                   <NumberAnimation labels={['2020', '2021']} prefix="+" suffix="%" values={[-17.7, 17.2]} />
                 </div>
                 <div className="bottom">
-                  <a href="https://hbs.unctad.org/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-                  <div className="source">???</div>
+                  <a href="https://hbs.unctad.org/total-trade-in-services/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
+                  <div className="source">UNCTAD</div>
                 </div>
               </>
             )}
@@ -163,8 +160,8 @@ function App() {
                   <p>The growth was largely driven by fuels, +72%.</p>
                 </div>
                 <div className="bottom">
-                  <a href="https://hbs.unctad.org/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-                  <div className="source" />
+                  <a href="https://hbs.unctad.org/total-merchandise-trade/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
+                  <div className="source">UNCTAD</div>
                 </div>
               </>
             )}
@@ -175,7 +172,7 @@ function App() {
       {/** ******
         Page 6
       ******** */}
-      <div className="content_wrapper content_wrapper_3">
+      <div className="content_wrapper content_wrapper_6">
         <div className="content_container">
           <IsVisible once>
             {(isVisible) => (
@@ -191,8 +188,8 @@ function App() {
                   <p>Fuels accounted for 22 percentage points of the growth. The upward trend continued this year with prices hitting their highest levels in nearly three decades.</p>
                 </div>
                 <div className="bottom">
-                  <a href="https://hbs.unctad.org/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-                  <div className="source">The prices of primary commodities</div>
+                  <a href="https://hbs.unctad.org/prices/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
+                  <div className="source">UNCTAD</div>
                 </div>
               </>
             )}
@@ -218,8 +215,8 @@ function App() {
                   <p>Travel exports were still less than half (42%) their pre-pandemic value of 2019.</p>
                 </div>
                 <div className="bottom">
-                  <a href="https://hbs.unctad.org/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-                  <div className="source">???</div>
+                  <a href="https://hbs.unctad.org/trade-in-services-by-category/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
+                  <div className="source">UNCTAD</div>
                 </div>
               </>
             )}
@@ -230,7 +227,7 @@ function App() {
       {/** ******
         Page 8
       ******** */}
-      <div className="content_wrapper content_wrapper_3">
+      <div className="content_wrapper content_wrapper_8">
         <div className="content_container">
           <IsVisible once>
             {(isVisible) => (
@@ -244,8 +241,8 @@ function App() {
                   <p>Western Asia and Northern Africa had the least diversified basket of exports, followed by Oceania and Sub-Saharan Africa.</p>
                 </div>
                 <div className="bottom">
-                  <a href="https://hbs.unctad.org/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-                  <div className="source">???</div>
+                  <a href="https://hbs.unctad.org/international-merchandise-trade/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
+                  <div className="source">UNCTAD</div>
                 </div>
               </>
             )}
@@ -256,7 +253,7 @@ function App() {
       {/** ******
         Page 9
       ******** */}
-      <div className="content_wrapper content_wrapper_8">
+      <div className="content_wrapper content_wrapper_9">
         <div className="content_container">
           <IsVisible once>
             {(isVisible) => (
@@ -271,8 +268,8 @@ function App() {
                   <p>GDP growth in LDCs fell far short of the 7% target enshrined in the UN’s 2030 Agenda for Sustainable Development.</p>
                 </div>
                 <div className="bottom">
-                  <a href="https://hbs.unctad.org/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-                  <div className="source">???</div>
+                  <a href="https://hbs.unctad.org/gross-domestic-product/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
+                  <div className="source">UNCTAD</div>
                 </div>
               </>
             )}
@@ -283,7 +280,7 @@ function App() {
       {/** ******
         Page 10
       ******** */}
-      <div className="content_wrapper content_wrapper_4">
+      <div className="content_wrapper content_wrapper_10">
         <div className="content_container">
           <IsVisible once>
             {(isVisible) => (
@@ -300,8 +297,8 @@ function App() {
                   <p>But the growth has been declining since late 1980s. In 2021, it stood at +0.87%.</p>
                 </div>
                 <div className="bottom">
-                  <a href="https://hbs.unctad.org/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-                  <div className="source">The global population</div>
+                  <a href="https://hbs.unctad.org/total-and-urban-population/" className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
+                  <div className="source">UNCTAD</div>
                 </div>
               </>
             )}
@@ -312,7 +309,7 @@ function App() {
       {/** ******
         Page 11
       ******** */}
-      <div className="content_wrapper content_wrapper_9 content_wrapper_last">
+      <div className="content_wrapper content_wrapper_11 content_wrapper_last">
         <div className="content_container">
           <IsVisible once>
             {(isVisible) => (
