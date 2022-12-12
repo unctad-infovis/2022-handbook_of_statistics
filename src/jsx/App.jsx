@@ -47,9 +47,9 @@ function App() {
                   delay: 'natural' // or milliseconds
                 }}
                 onInit={(typewriter) => {
-                  typewriter.typeString('What are the major trends in')
+                  typewriter.typeString('What are the major trends in ')
                     .pauseFor(50)
-                    .pasteString('<span class="highlight">international tradee</span>')
+                    .pasteString('<span class="highlight">international trade </span>')
                     .typeString(' and ')
                     .pauseFor(50)
                     .pasteString('<span class="highlight">development</span>')
