@@ -47,9 +47,9 @@ function App() {
                   delay: 'natural' // or milliseconds
                 }}
                 onInit={(typewriter) => {
-                  typewriter.typeString('What are the major trends on the ')
+                  typewriter.typeString('What are the major trends in')
                     .pauseFor(50)
-                    .pasteString('<span class="highlight">international trade</span>')
+                    .pasteString('<span class="highlight">international tradee</span>')
                     .typeString(' and ')
                     .pauseFor(50)
                     .pasteString('<span class="highlight">development</span>')
@@ -90,11 +90,11 @@ function App() {
                     will slow in 2022
                   </h3>
                   <NumberAnimation labels={['2021', '2022']} prefix="+" suffix="%" values={[5.7, 3.3]} />
-                  <p>Nowcasts show that trade in both goods and services will slowdown. Growth in merchandise exports is expected to decline by half.</p>
+                  <p>Nowcasts show that trade in both goods and services will slow down. Growth in merchandise exports is expected to decline by half.</p>
                 </div>
                 <div className="bottom">
                   <a href="https://hbs.unctad.org/gross-domestic-product/" onClick={() => track('Click', 'card_2_link')} className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-                  <div className="source">World’s real GDP, 2022 is a prediction based on UNCTAD Nowcast</div>
+                  <div className="source">World’s real GDP in 2022 is based on UNCTAD nowcast</div>
                 </div>
               </>
             )}
@@ -123,7 +123,7 @@ function App() {
                 </div>
                 <div className="bottom">
                   <a href="https://hbs.unctad.org/total-merchandise-trade/" onClick={() => track('Click', 'card_3_link')} className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-                  <div className="source">UNCTAD</div>
+                  <div className="source">UNCTAD Secretariat</div>
                 </div>
               </>
             )}
@@ -154,9 +154,10 @@ function App() {
                   </h3>
                   <NumberAnimation labels={['2020', '2021']} prefix="+" suffix="%" values={[-17.7, 17.2]} />
                 </div>
+                <p>In 2022, UNCTAD nowcast suggests continued growth of +14.6%.</p>
                 <div className="bottom">
                   <a href="https://hbs.unctad.org/total-trade-in-services/" onClick={() => track('Click', 'card_4_link')} className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-                  <div className="source">UNCTAD</div>
+                  <div className="source">UNCTAD Secretariat</div>
                 </div>
               </>
             )}
@@ -186,9 +187,10 @@ function App() {
                   <NumberAnimation labels={['2020', '2021']} prefix="+" suffix="%" values={[-7.2, 26.5]} />
                   <p>The growth was largely driven by fuels, +72%.</p>
                 </div>
+                <p>UNCTAD nowcast suggests continued growth of 13.8%.</p>
                 <div className="bottom">
                   <a href="https://hbs.unctad.org/total-merchandise-trade/" onClick={() => track('Click', 'card_5_link')} className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-                  <div className="source">UNCTAD</div>
+                  <div className="source">UNCTAD Secretariat</div>
                 </div>
               </>
             )}
@@ -219,7 +221,7 @@ function App() {
                 </div>
                 <div className="bottom">
                   <a href="https://hbs.unctad.org/prices/" onClick={() => track('Click', 'card_6_link')} className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-                  <div className="source">UNCTAD</div>
+                  <div className="source">UNCTAD Secretariat</div>
                 </div>
               </>
             )}
@@ -251,7 +253,7 @@ function App() {
                 </div>
                 <div className="bottom">
                   <a href="https://hbs.unctad.org/trade-in-services-by-category/" onClick={() => track('Click', 'card_7_link')} className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-                  <div className="source">UNCTAD</div>
+                  <div className="source">UNCTAD Secretariat</div>
                 </div>
               </>
             )}
@@ -280,7 +282,7 @@ function App() {
                 </div>
                 <div className="bottom">
                   <a href="https://hbs.unctad.org/trade-indicators/" onClick={() => track('Click', 'card_8_link')} className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-                  <div className="source">UNCTAD</div>
+                  <div className="source">UNCTAD Secretariat</div>
                 </div>
               </>
             )}
@@ -310,7 +312,7 @@ function App() {
                 </div>
                 <div className="bottom">
                   <a href="https://hbs.unctad.org/gross-domestic-product/" onClick={() => track('Click', 'card_9_link')} className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-                  <div className="source">UNCTAD</div>
+                  <div className="source">UNCTAD Secretariat</div>
                 </div>
               </>
             )}
@@ -338,11 +340,11 @@ function App() {
                     in November 2022
                   </h3>
                   <People />
-                  <p>But the growth has been declining since late 1980s. In 2021, it stood at +0.87%.</p>
+                  <p>But the growth has been declining since late 1980s. In 2021, it dipped down to +0.87% from +1.05% just in 2019.</p>
                 </div>
                 <div className="bottom">
                   <a href="https://hbs.unctad.org/total-and-urban-population/" onClick={() => track('Click', 'card_10_link')} className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-                  <div className="source">UNCTAD</div>
+                  <div className="source">UNCTAD Secretariat</div>
                 </div>
               </>
             )}
