@@ -159,7 +159,7 @@ function App() {
                     {' '}
                     <span className="nowrap">pre-COVID-19</span>
                     {' '}
-                    level.
+                    level
                   </h3>
                   <NumberAnimation labels={['2020', '2021']} prefix="+" suffix="%" values={[-17.7, 17.2]} />
                   <p>In 2022, UNCTAD nowcast suggests continued growth of +14.6%.</p>
