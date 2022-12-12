@@ -153,8 +153,8 @@ function App() {
                     level.
                   </h3>
                   <NumberAnimation labels={['2020', '2021']} prefix="+" suffix="%" values={[-17.7, 17.2]} />
+                  <p>In 2022, UNCTAD nowcast suggests continued growth of +14.6%.</p>
                 </div>
-                <p>In 2022, UNCTAD nowcast suggests continued growth of +14.6%.</p>
                 <div className="bottom">
                   <a href="https://hbs.unctad.org/total-trade-in-services/" onClick={() => track('Click', 'card_4_link')} className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
                   <div className="source">UNCTAD Secretariat</div>
@@ -185,9 +185,8 @@ function App() {
                     <span className="nowrap">COVID-19</span>
                   </h3>
                   <NumberAnimation labels={['2020', '2021']} prefix="+" suffix="%" values={[-7.2, 26.5]} />
-                  <p>The growth was largely driven by fuels, +72%.</p>
+                  <p>The growth was largely driven by fuels, +72%. In 2022, UNCTAD nowcast suggests continued growth of 13.8%.</p>
                 </div>
-                <p>UNCTAD nowcast suggests continued growth of 13.8%.</p>
                 <div className="bottom">
                   <a href="https://hbs.unctad.org/total-merchandise-trade/" onClick={() => track('Click', 'card_5_link')} className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
                   <div className="source">UNCTAD Secretariat</div>
