@@ -37,36 +37,45 @@ function App() {
       ******** */}
       <div className="content_wrapper content_wrapper_1">
         <div className="content_container">
-          <div className="content visible">
-            <h2>
-              <br />
-              <br />
-              <Typewriter
-                options={{
-                  // delay: 'natural' // or milliseconds
-                  delay: 'natural' // or milliseconds
-                }}
-                onInit={(typewriter) => {
-                  typewriter.typeString('What are the major trends in ')
-                    .pauseFor(50)
-                    .pasteString('<span class="highlight">international trade </span>')
-                    .typeString(' and ')
-                    .pauseFor(50)
-                    .pasteString('<span class="highlight">development</span>')
-                    .typeString('')
-                    .pauseFor(1500)
-                    .pasteString('<br /><br /><strong>UNCTAD’s<br /><span class="highlight">Handbook of Statistics</span><br />will tell you</strong>')
-                    .start();
-                }}
-              />
-            </h2>
-          </div>
-          <div className="infograph_container">
-            <img className="infograph" src={`${(window.location.href.includes('unctad.org')) ? 'https://storage.unctad.org/2022-handbook_of_statistics/' : './'}assets/img/2022-handbook_of_statistics_infograph.svg`} alt="Infograph" />
-          </div>
-          <div className="unctad_logo_container">
-            <img src="https://unctad.org/sites/default/files/2022-11/unctad_logo.svg" alt="UNCTAD logo" />
-          </div>
+          <IsVisible once>
+            {(isVisible) => (
+              <>
+                {
+                  isVisible && track('Scroll', 'card_1')
+                }
+                <div className="content visible">
+                  <h2>
+                    <br />
+                    <br />
+                    <Typewriter
+                      options={{
+                        // delay: 'natural' // or milliseconds
+                        delay: 'natural' // or milliseconds
+                      }}
+                      onInit={(typewriter) => {
+                        typewriter.typeString('What are the major trends in ')
+                          .pauseFor(50)
+                          .pasteString('<span class="highlight">international trade </span>')
+                          .typeString(' and ')
+                          .pauseFor(50)
+                          .pasteString('<span class="highlight">development</span>')
+                          .typeString('')
+                          .pauseFor(1500)
+                          .pasteString('<br /><br /><strong>UNCTAD’s<br /><span class="highlight">Handbook of Statistics</span><br />will tell you</strong>')
+                          .start();
+                      }}
+                    />
+                  </h2>
+                </div>
+                <div className="infograph_container">
+                  <img className="infograph" src={`${(window.location.href.includes('unctad.org')) ? 'https://storage.unctad.org/2022-handbook_of_statistics/' : './'}assets/img/2022-handbook_of_statistics_infograph.svg`} alt="Infograph" />
+                </div>
+                <div className="unctad_logo_container">
+                  <img src="https://unctad.org/sites/default/files/2022-11/unctad_logo.svg" alt="UNCTAD logo" />
+                </div>
+              </>
+            )}
+          </IsVisible>
         </div>
         <Arrows next="2" />
       </div>
