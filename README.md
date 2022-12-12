@@ -2,6 +2,9 @@
 
 **Live demo** https://unctad-infovis.github.io/2022-handbook_of_statistics/
 
+## Used in
+* [UNCTAD releases key data report on global economic, trade and development trends](https://unctad.org/news/unctad-releases-key-data-report-global-economic-trade-and-development-trends)
+
 ## Rights of usage
 
 Contact Teemo Tebest.
