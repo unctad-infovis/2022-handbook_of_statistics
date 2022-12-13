@@ -9,12 +9,10 @@ body {
 @import 'colors.less';
 #app-root-2022-handbook_of_statistics .app {
   font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  scroll-behavior: smooth;
   .content_wrapper {
     align-items: center;
     background-attachment: fixed;
     background-blend-mode: darken;
-    background-color: rgba(0, 0, 0, 0.6);
     background-image: url('../assets/img/2022-handbook_of_statistics_background.png');
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -40,10 +38,7 @@ body {
         background-color: @unblue;
         box-shadow: 0 3px 12px rgb(0 158 219 / 0.9);
         .content {
-          a {
-            color: #fff;
-            text-decoration: none;
-          }
+          color: #fff;
           .highlight {
             color: #000;
           }
@@ -72,8 +67,8 @@ body {
     }
     .content_container {
       align-items: center;
-      background-color: #f4f3f3;
-      box-shadow: 0 3px 12px rgb(255 255 255 / 0.9);
+      background-color: #fff;
+      box-shadow: 0 3px 12px rgb(0 0 0 / 0.5);
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
@@ -98,7 +93,7 @@ body {
         flex-direction: column;
         justify-content: center;
         margin: auto auto;
-        max-width: 490px;
+        max-width: 520px;
         opacity: 0;
         text-align: center;
         width: 100%;
@@ -107,6 +102,12 @@ body {
           transition-delay: 0.5s;
           transition-duration: 2s;
           transition-property: opacity;
+        }
+        a {
+          text-decoration: underline;
+          &:hover {
+            text-decoration: none;
+          }
         }
         h2 {
           color: rgba(0, 0, 0, 0.8);
