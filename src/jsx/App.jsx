@@ -105,7 +105,7 @@ function App() {
                     will slow in 2022
                   </h3>
                   <NumberAnimation labels={['2021', '2022']} prefix="+" suffix="%" values={[5.7, 3.3]} />
-                  <p>UNCTAD nowcasts show trade in goods and services will slow down. Growth in merchandise exports is expected to decline by half.</p>
+                  <p>UNCTAD nowcasts show both trade in goods and services will slow down. Growth in merchandise exports is expected to decline by half.</p>
                 </div>
                 <div className="bottom">
                   <a href="https://hbs.unctad.org/gross-domestic-product/" onClick={() => track('Click', 'card_2_link')} className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
