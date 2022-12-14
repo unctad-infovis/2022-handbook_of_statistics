@@ -87,7 +87,7 @@ function App() {
       </div>
       {/** ******
         Page 2
-      ******** */}
+      ********
       <div className="content_wrapper content_wrapper_2">
         <div className="content_container">
           <IsVisible once>
@@ -116,7 +116,7 @@ function App() {
           </IsVisible>
         </div>
         <Arrows next="3" />
-      </div>
+      </div> */}
       {/** ******
         Page 3
       ******** */}
