@@ -10,7 +10,7 @@ import IsVisible from 'react-is-visible';
 import easingFn from '../helpers/EasingFn.js';
 
 function NumberAnimation({
-  labels, prefix, suffix, values
+  labels, prefix, suffix, values, decimal
 }) {
   const divider = (Math.abs(values[1]) < Math.abs(values[0]) ? Math.abs(values[0]) : Math.abs(values[1]));
   return (
@@ -20,7 +20,7 @@ function NumberAnimation({
           <IsVisible once>
             {(isVisible) => (
               <div className={(values[0] < 0) ? 'negative' : ''}>
-                {isVisible && (<CountUp easingFn={easingFn} start={0} delay={0.7} end={values[0]} decimals={1} duration={4} separator="," useEasing prefix={(values[0] > 0) ? prefix : ''} suffix={suffix} />)}
+                {isVisible && (<CountUp easingFn={easingFn} start={0} delay={0.7} end={values[0]} decimals={1} duration={4} separator="," decimal={decimal} useEasing prefix={(values[0] > 0) ? prefix : ''} suffix={suffix} />)}
               </div>
             )}
           </IsVisible>
@@ -32,7 +32,7 @@ function NumberAnimation({
           <IsVisible once>
             {(isVisible) => (
               <div>
-                {isVisible && (<CountUp easingFn={easingFn} start={0} delay={0.7} end={values[1]} decimals={1} duration={4} separator="," useEasing prefix={(values[1] > 0) ? prefix : ''} suffix={suffix} />)}
+                {isVisible && (<CountUp easingFn={easingFn} start={0} delay={0.7} end={values[1]} decimals={1} duration={4} separator="," decimal={decimal} useEasing prefix={(values[1] > 0) ? prefix : ''} suffix={suffix} />)}
               </div>
             )}
           </IsVisible>
@@ -47,10 +47,12 @@ NumberAnimation.propTypes = {
   labels: PropTypes.instanceOf(Array).isRequired,
   prefix: PropTypes.string,
   suffix: PropTypes.string,
+  decimal: PropTypes.string,
   values: PropTypes.instanceOf(Array).isRequired
 };
 
 NumberAnimation.defaultProps = {
+  decimal: '.',
   prefix: '',
   suffix: ''
 };

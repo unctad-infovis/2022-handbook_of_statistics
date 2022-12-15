@@ -71,6 +71,7 @@ function App() {
                     Browse the key messages or
                     {' '}
                     <a href="https://unctad.org/webflyer/handbook-statistics-2022" onClick={() => track('Click', 'webflyer_link')}>download the report</a>
+                    .
                   </p>
                 </div>
                 <div className="infograph_container">
@@ -109,7 +110,7 @@ function App() {
                 </div>
                 <div className="bottom">
                   <a href="https://hbs.unctad.org/gross-domestic-product/" onClick={() => track('Click', 'card_2_link')} className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-                  <div className="source">World’s real GDP in 2022 is based on UNCTAD nowcasts</div>
+                  <div className="source"><em>Source</em> World’s real GDP in 2022 is based on UNCTAD nowcasts</div>
                 </div>
               </>
             )}
@@ -138,7 +139,11 @@ function App() {
                 </div>
                 <div className="bottom">
                   <a href="https://hbs.unctad.org/total-merchandise-trade/" onClick={() => track('Click', 'card_3_link')} className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-                  <div className="source">UNCTAD Secretariat</div>
+                  <div className="source">
+                    <em>Source</em>
+                    {' '}
+                    UNCTAD Secretariat
+                  </div>
                 </div>
               </>
             )}
@@ -172,7 +177,11 @@ function App() {
                 </div>
                 <div className="bottom">
                   <a href="https://hbs.unctad.org/total-trade-in-services/" onClick={() => track('Click', 'card_4_link')} className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-                  <div className="source">UNCTAD Secretariat</div>
+                  <div className="source">
+                    <em>Source</em>
+                    {' '}
+                    UNCTAD Secretariat
+                  </div>
                 </div>
               </>
             )}
@@ -204,7 +213,11 @@ function App() {
                 </div>
                 <div className="bottom">
                   <a href="https://hbs.unctad.org/total-merchandise-trade/" onClick={() => track('Click', 'card_5_link')} className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-                  <div className="source">UNCTAD Secretariat</div>
+                  <div className="source">
+                    <em>Source</em>
+                    {' '}
+                    UNCTAD Secretariat
+                  </div>
                 </div>
               </>
             )}
@@ -235,7 +248,11 @@ function App() {
                 </div>
                 <div className="bottom">
                   <a href="https://hbs.unctad.org/prices/" onClick={() => track('Click', 'card_6_link')} className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-                  <div className="source">UNCTAD Secretariat</div>
+                  <div className="source">
+                    <em>Source</em>
+                    {' '}
+                    UNCTAD Secretariat
+                  </div>
                 </div>
               </>
             )}
@@ -267,7 +284,11 @@ function App() {
                 </div>
                 <div className="bottom">
                   <a href="https://hbs.unctad.org/trade-in-services-by-category/" onClick={() => track('Click', 'card_7_link')} className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-                  <div className="source">UNCTAD Secretariat</div>
+                  <div className="source">
+                    <em>Source</em>
+                    {' '}
+                    UNCTAD Secretariat
+                  </div>
                 </div>
               </>
             )}
@@ -296,7 +317,11 @@ function App() {
                 </div>
                 <div className="bottom">
                   <a href="https://hbs.unctad.org/trade-indicators/" onClick={() => track('Click', 'card_8_link')} className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-                  <div className="source">UNCTAD Secretariat</div>
+                  <div className="source">
+                    <em>Source</em>
+                    {' '}
+                    UNCTAD Secretariat
+                  </div>
                 </div>
               </>
             )}
@@ -326,7 +351,11 @@ function App() {
                 </div>
                 <div className="bottom">
                   <a href="https://hbs.unctad.org/gross-domestic-product/" onClick={() => track('Click', 'card_9_link')} className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-                  <div className="source">UNCTAD Secretariat</div>
+                  <div className="source">
+                    <em>Source</em>
+                    {' '}
+                    UNCTAD Secretariat
+                  </div>
                 </div>
               </>
             )}
@@ -358,7 +387,11 @@ function App() {
                 </div>
                 <div className="bottom">
                   <a href="https://hbs.unctad.org/total-and-urban-population/" onClick={() => track('Click', 'card_10_link')} className="readmore" target="_blank" rel="noreferrer">Dive into the data</a>
-                  <div className="source">UNCTAD Secretariat</div>
+                  <div className="source">
+                    <em>Source</em>
+                    {' '}
+                    UNCTAD Secretariat
+                  </div>
                 </div>
               </>
             )}
