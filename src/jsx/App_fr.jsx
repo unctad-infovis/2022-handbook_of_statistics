@@ -237,7 +237,7 @@ function App() {
                     de base ont grimpé en flèche en 2021
                   </h3>
                   <div className="numbers_container"><div className="numbers_wrapper"><span className="number_value">{isVisible && (<CountUp easingFn={easingFn} start={0} delay={0.7} end={55} decimals={0} duration={4} separator="," useEasing prefix="+" suffix="%" />)}</span></div></div>
-                  <p>Les combustibles ont contribué à hauteur de 22 points de pourcentage à cette croissance. La tendance à la hausse s&pos;est poursuivie cette année, les prix atteignant leur plus haut niveau depuis près de trois décennies.</p>
+                  <p>Les combustibles ont contribué à hauteur de 22 points de pourcentage à cette croissance. La tendance à la hausse s&apos;est poursuivie cette année, les prix atteignant leur plus haut niveau depuis près de trois décennies.</p>
                 </div>
                 <div className="bottom">
                   <a href="https://hbs.unctad.org/prices/" onClick={() => track('Click', 'card_6_link')} className="readmore" target="_blank" rel="noreferrer">Plongez dans les données</a>
