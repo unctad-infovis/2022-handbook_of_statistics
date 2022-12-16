@@ -166,7 +166,7 @@ function App() {
                     a augmenté, mais n&apos;a pas atteint les niveaux pré-pandémiques.
                   </h3>
                   <NumberAnimation labels={['2020', '2021']} prefix="+" suffix="%" values={[-17.7, 17.2]} decimal="," />
-                  <p>En 2022, les prévisions de la CNUCED indiquent une croissance de +14,6&nbps;%.</p>
+                  <p>En 2022, les prévisions de la CNUCED indiquent une croissance de +14,6&nbsp;%.</p>
                 </div>
                 <div className="bottom">
                   <a href="https://hbs.unctad.org/total-trade-in-services/" onClick={() => track('Click', 'card_4_link')} className="readmore" target="_blank" rel="noreferrer">Plongez dans les données</a>
