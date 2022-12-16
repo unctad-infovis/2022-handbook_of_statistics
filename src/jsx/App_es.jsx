@@ -102,7 +102,7 @@ function App() {
                     {' '}
                     will slow in 2022
                   </h3>
-                  <NumberAnimation labels={['2021', '2022']} prefix="+" suffix="%" values={[5.7, 3.3]} />
+                  <NumberAnimation labels={['2021', '2022']} prefix="+" suffix="&nbsp;%" values={[5.7, 3.3]} />
                   <p>UNCTAD nowcasts show both trade in goods and services will slow down. Growth in merchandise exports is expected to decline by half.</p>
                 </div>
                 <div className="bottom">
@@ -165,7 +165,7 @@ function App() {
                     {' '}
                     aumentó pero no alcanzó los niveles previos a la pandemia
                   </h3>
-                  <NumberAnimation labels={['2020', '2021']} prefix="+" suffix="%" values={[-17.7, 17.2]} decimal="," />
+                  <NumberAnimation labels={['2020', '2021']} prefix="+" suffix="&nbsp;%" values={[-17.7, 17.2]} decimal="," />
                   <p>En 2022, las previsiones inmediatas de la UNCTAD muestran un crecimiento continuo del +14,6&nbsp;%</p>
                 </div>
                 <div className="bottom">
@@ -201,7 +201,7 @@ function App() {
                     {' '}
                     <span className="nowrap">COVID-19</span>
                   </h3>
-                  <NumberAnimation labels={['2020', '2021']} prefix="+" suffix="%" values={[-7.2, 26.5]} decimal="," />
+                  <NumberAnimation labels={['2020', '2021']} prefix="+" suffix="&nbsp;%" values={[-7.2, 26.5]} decimal="," />
                   <p>El crecimiento fue impulsado en gran medida por los combustibles (+72%). En 2022, las previsiones de la UNCTAD muestran un crecimiento continuo del 13,8&nbsp;%.</p>
                 </div>
                 <div className="bottom">
@@ -236,7 +236,7 @@ function App() {
                     {' '}
                     se dispararon en 2021
                   </h3>
-                  <div className="numbers_container"><div className="numbers_wrapper"><span className="number_value">{isVisible && (<CountUp easingFn={easingFn} start={0} delay={0.7} end={55} decimals={0} duration={4} separator="," useEasing prefix="+" suffix="%" />)}</span></div></div>
+                  <div className="numbers_container"><div className="numbers_wrapper"><span className="number_value">{isVisible && (<CountUp easingFn={easingFn} start={0} delay={0.7} end={55} decimals={0} duration={4} separator="," useEasing prefix="+" suffix="&nbsp;%" />)}</span></div></div>
                   <p>Los combustibles registraron 22 puntos porcentuales del crecimiento. La tendencia ascendente de los precios continuó este año, alcanzando sus niveles más altos en casi tres décadas.</p>
                 </div>
                 <div className="bottom">
@@ -337,7 +337,7 @@ function App() {
                     {' '}
                     de los países menos adelantados en 2021 fue lento
                   </h3>
-                  <NumberAnimation labels={['PMA', 'Global']} prefix="+" suffix="%" values={[2.0, 5.7]} decimal="," />
+                  <NumberAnimation labels={['PMA', 'Global']} prefix="+" suffix="&nbsp;%" values={[2.0, 5.7]} decimal="," />
                   <p>El crecimiento del PIB en los PMA estuvo muy por debajo del objetivo del 7 % consagrado en la Agenda 2030 para el Desarrollo Sostenible de las Naciones Unidas. </p>
                 </div>
                 <div className="bottom">

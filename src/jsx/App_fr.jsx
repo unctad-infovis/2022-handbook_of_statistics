@@ -102,7 +102,7 @@ function App() {
                     {' '}
                     will slow in 2022
                   </h3>
-                  <NumberAnimation labels={['2021', '2022']} prefix="+" suffix="%" values={[5.7, 3.3]} />
+                  <NumberAnimation labels={['2021', '2022']} prefix="+" suffix="&nbsp;%" values={[5.7, 3.3]} />
                   <p>UNCTAD nowcasts show both trade in goods and services will slow down. Growth in merchandise exports is expected to decline by half.</p>
                 </div>
                 <div className="bottom">
@@ -163,9 +163,9 @@ function App() {
                   <h3>
                     <span className="highlight">Le commerce des services</span>
                     {' '}
-                    a augmenté, mais n&apos;a pas atteint les niveaux pré-pandémiques.
+                    a augmenté, mais n&apos;a pas atteint les niveaux pré-pandémiques
                   </h3>
-                  <NumberAnimation labels={['2020', '2021']} prefix="+" suffix="%" values={[-17.7, 17.2]} decimal="," />
+                  <NumberAnimation labels={['2020', '2021']} prefix="+" suffix="&nbsp;%" values={[-17.7, 17.2]} decimal="," />
                   <p>En 2022, les prévisions de la CNUCED indiquent une croissance de +14,6&nbsp;%.</p>
                 </div>
                 <div className="bottom">
@@ -201,7 +201,7 @@ function App() {
                     {' '}
                     <span className="nowrap">COVID-19</span>
                   </h3>
-                  <NumberAnimation labels={['2020', '2021']} prefix="+" suffix="%" values={[-7.2, 26.5]} decimal="," />
+                  <NumberAnimation labels={['2020', '2021']} prefix="+" suffix="&nbsp;%" values={[-7.2, 26.5]} decimal="," />
                   <p>La croissance a été largement dopée par les carburants (+72%). En 2022, les prévisions de la CNUCED indiquent une croissance régulière de 13,8&nbsp;%.</p>
                 </div>
                 <div className="bottom">
@@ -236,7 +236,7 @@ function App() {
                     {' '}
                     de base ont grimpé en flèche en 2021
                   </h3>
-                  <div className="numbers_container"><div className="numbers_wrapper"><span className="number_value">{isVisible && (<CountUp easingFn={easingFn} start={0} delay={0.7} end={55} decimals={0} duration={4} separator="," useEasing prefix="+" suffix="%" />)}</span></div></div>
+                  <div className="numbers_container"><div className="numbers_wrapper"><span className="number_value">{isVisible && (<CountUp easingFn={easingFn} start={0} delay={0.7} end={55} decimals={0} duration={4} separator="," useEasing prefix="+" suffix="&nbsp;%" />)}</span></div></div>
                   <p>Les combustibles ont contribué à hauteur de 22 points de pourcentage à cette croissance. La tendance à la hausse s&apos;est poursuivie cette année, les prix atteignant leur plus haut niveau depuis près de trois décennies.</p>
                 </div>
                 <div className="bottom">
@@ -269,7 +269,7 @@ function App() {
                   <h3>
                     <span className="highlight">Les voyages internationaux</span>
                     {' '}
-                    n&apos;ont pas retrouvé leur niveau d&apos;avant la pandémie.
+                    n&apos;ont pas retrouvé leur niveau d&apos;avant la pandémie
                   </h3>
                   <p>En 2021, les exportations de services de voyage représentaient encore moins de la moitié (42&nbsp;%) de leur valeur de 2019.</p>
                 </div>
@@ -337,7 +337,7 @@ function App() {
                     {' '}
                     des pays les moins avancés a été lente en 2021
                   </h3>
-                  <NumberAnimation labels={['PMA', 'Monde']} prefix="+" suffix="%" values={[2.0, 5.7]} decimal="," />
+                  <NumberAnimation labels={['PMA', 'Monde']} prefix="+" suffix="&nbsp;%" values={[2.0, 5.7]} decimal="," />
                   <p>La croissance du PIB des PMA est loin d&apos;atteindre l&apos;objectif de 7&nbsp;% inscrit dans le programme de développement durable des Nations Unies pour 2030.</p>
                 </div>
                 <div className="bottom">
