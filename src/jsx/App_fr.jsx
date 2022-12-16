@@ -54,28 +54,28 @@ function App() {
                         delay: 'natural' // or milliseconds
                       }}
                       onInit={(typewriter) => {
-                        typewriter.typeString('¿Cuáles son las principales tendencias en el ')
+                        typewriter.typeString('Quelles sont les grandes tendances en matière ')
                           .pauseFor(50)
-                          .pasteString('<span class="highlight">comercio</span>')
-                          .typeString(' y ')
+                          .pasteString('<span class="highlight">de commerce</span>')
+                          .typeString(' et ')
                           .pauseFor(50)
-                          .pasteString('<span class="highlight">desarrollo</span>?')
+                          .pasteString('<span class="highlight">de développement</span> ?')
                           .typeString('')
                           .pauseFor(1500)
-                          .pasteString('<br /><br /><strong><span class="highlight">El Manual de Estadística</span><br /> de la UNCTAD tiene toda la información.</strong>')
+                          .pasteString('<br /><br /><strong><span class="highlight">Le Manuel de statistiques 2022</span> de la CNUCED dispose de toutes les données.</strong>')
                           .start();
                       }}
                     />
                   </h2>
                   <p>
-                    Explore los mensajes clave o
+                    Parcourez les messages clés ou
                     {' '}
-                    <a href="https://unctad.org/webflyer/handbook-statistics-2022" onClick={() => track('Click', 'webflyer_link')}>descargue el informe</a>
+                    <a href="https://unctad.org/webflyer/handbook-statistics-2022" onClick={() => track('Click', 'webflyer_link')}>téléchargez le rapport</a>
                     .
                   </p>
                 </div>
                 <div className="unctad_logo_container">
-                  <img src="https://unctad.org/sites/default/files/2022-12/unctad_logo_es.svg" alt="UNCTAD logo" />
+                  <img src="https://unctad.org/sites/default/files/2022-12/unctad_logo_fr.svg" alt="UNCTAD logo" />
                 </div>
               </>
             )}
@@ -106,8 +106,8 @@ function App() {
                   <p>UNCTAD nowcasts show both trade in goods and services will slow down. Growth in merchandise exports is expected to decline by half.</p>
                 </div>
                 <div className="bottom">
-                  <a href="https://hbs.unctad.org/gross-domestic-product/" onClick={() => track('Click', 'card_2_link')} className="readmore" target="_blank" rel="noreferrer">Sumérjase en la información</a>
-                  <div className="source"><em>Fuente:</em> World’s real GDP in 2022 is based on UNCTAD nowcasts</div>
+                  <a href="https://hbs.unctad.org/gross-domestic-product/" onClick={() => track('Click', 'card_2_link')} className="readmore" target="_blank" rel="noreferrer">Plongez dans les données</a>
+                  <div className="source"><em>Source :</em> World’s real GDP in 2022 is based on UNCTAD nowcasts</div>
                 </div>
               </>
             )}
@@ -128,18 +128,18 @@ function App() {
                 }
                 <div className={`content ${isVisible ? 'visible' : ''}`}>
                   <h3>
-                    <span className="highlight">El superávit del comercio</span>
+                    <span className="highlight">L&apos;excédent commercial des économies</span>
                     {' '}
-                    de las economías en desarrollo aumentó.
+                    en développement a augmenté
                   </h3>
-                  <p>El aumento se reflejó en un déficit comercial cada vez mayor para las economías desarrolladas. El superávit aumentó más en África.</p>
+                  <p>Cette hausse a été accompagnée d&apos;un accroissement du déficit commercial des économies développées. L&apos;Afrique enregistre la plus forte hausse du surplus.</p>
                 </div>
                 <div className="bottom">
-                  <a href="https://hbs.unctad.org/total-merchandise-trade/" onClick={() => track('Click', 'card_3_link')} className="readmore" target="_blank" rel="noreferrer">Sumérjase en la información</a>
+                  <a href="https://hbs.unctad.org/total-merchandise-trade/" onClick={() => track('Click', 'card_3_link')} className="readmore" target="_blank" rel="noreferrer">Plongez dans les données</a>
                   <div className="source">
-                    <em>Fuente:</em>
+                    <em>Source :</em>
                     {' '}
-                    Secretaría de la UNCTAD
+                    Secrétariat de la CNUCED
                   </div>
                 </div>
               </>
@@ -166,14 +166,14 @@ function App() {
                     aumentó pero no alcanzó los niveles previos a la pandemia
                   </h3>
                   <NumberAnimation labels={['2020', '2021']} prefix="+" suffix="%" values={[-17.7, 17.2]} decimal="," />
-                  <p>En 2022, las previsiones inmediatas de la UNCTAD muestran un crecimiento continuo del +14,6&nbsp;%</p>
+                  <p>En 2022, les prévisions de la CNUCED indiquent une croissance de +14,6%.</p>
                 </div>
                 <div className="bottom">
-                  <a href="https://hbs.unctad.org/total-trade-in-services/" onClick={() => track('Click', 'card_4_link')} className="readmore" target="_blank" rel="noreferrer">Sumérjase en la información</a>
+                  <a href="https://hbs.unctad.org/total-trade-in-services/" onClick={() => track('Click', 'card_4_link')} className="readmore" target="_blank" rel="noreferrer">Plongez dans les données</a>
                   <div className="source">
-                    <em>Fuente:</em>
+                    <em>Source :</em>
                     {' '}
-                    Secretaría de la UNCTAD
+                    Secrétariat de la CNUCED
                   </div>
                 </div>
               </>
@@ -195,21 +195,21 @@ function App() {
                 }
                 <div className={`content ${isVisible ? 'visible' : ''}`}>
                   <h3>
-                    <span className="highlight">El comercio de mercancías</span>
+                    <span className="highlight">Le commerce de marchandises </span>
                     {' '}
-                    se recuperó del
+                    a connu un rebond après la crise de la
                     {' '}
                     <span className="nowrap">COVID-19</span>
                   </h3>
                   <NumberAnimation labels={['2020', '2021']} prefix="+" suffix="%" values={[-7.2, 26.5]} decimal="," />
-                  <p>El crecimiento fue impulsado en gran medida por los combustibles (+72%). En 2022, las previsiones de la UNCTAD muestran un crecimiento continuo del 13,8&nbsp;%.</p>
+                  <p>La croissance a été largement dopée par les carburants (+72%). En 2022, les prévisions de la CNUCED indiquent une croissance régulière de 13,8 %.</p>
                 </div>
                 <div className="bottom">
-                  <a href="https://hbs.unctad.org/total-merchandise-trade/" onClick={() => track('Click', 'card_5_link')} className="readmore" target="_blank" rel="noreferrer">Sumérjase en la información</a>
+                  <a href="https://hbs.unctad.org/total-merchandise-trade/" onClick={() => track('Click', 'card_5_link')} className="readmore" target="_blank" rel="noreferrer">Plongez dans les données</a>
                   <div className="source">
-                    <em>Fuente:</em>
+                    <em>Source :</em>
                     {' '}
-                    Secretaría de la UNCTAD
+                    Secrétariat de la CNUCED
                   </div>
                 </div>
               </>
@@ -232,19 +232,19 @@ function App() {
                 <div className={`content ${isVisible ? 'visible' : ''}`}>
                   <div className="icon_container"><img src={`${(window.location.href.includes('unctad.org')) ? 'https://storage.unctad.org/2022-handbook_of_statistics/' : './'}assets/img/2022-handbook_of_statistics_commodities.svg`} alt="Commodities icon" /></div>
                   <h3>
-                    <span className="highlight">Los precios de las materias primas</span>
+                    <span className="highlight">Les prix des produits</span>
                     {' '}
-                    se dispararon en 2021
+                    de base ont grimpé en flèche en 2021
                   </h3>
                   <div className="numbers_container"><div className="numbers_wrapper"><span className="number_value">{isVisible && (<CountUp easingFn={easingFn} start={0} delay={0.7} end={55} decimals={0} duration={4} separator="," useEasing prefix="+" suffix="%" />)}</span></div></div>
-                  <p>Los combustibles registraron 22 puntos porcentuales del crecimiento. La tendencia ascendente de los precios continuó este año, alcanzando sus niveles más altos en casi tres décadas.</p>
+                  <p>Les combustibles ont contribué à hauteur de 22 points de pourcentage à cette croissance. La tendance à la hausse s&pos;est poursuivie cette année, les prix atteignant leur plus haut niveau depuis près de trois décennies.</p>
                 </div>
                 <div className="bottom">
-                  <a href="https://hbs.unctad.org/prices/" onClick={() => track('Click', 'card_6_link')} className="readmore" target="_blank" rel="noreferrer">Sumérjase en la información</a>
+                  <a href="https://hbs.unctad.org/prices/" onClick={() => track('Click', 'card_6_link')} className="readmore" target="_blank" rel="noreferrer">Plongez dans les données</a>
                   <div className="source">
-                    <em>Fuente:</em>
+                    <em>Source :</em>
                     {' '}
-                    Secretaría de la UNCTAD
+                    Secrétariat de la CNUCED
                   </div>
                 </div>
               </>
@@ -267,18 +267,18 @@ function App() {
                 <div className={`content ${isVisible ? 'visible' : ''}`}>
                   <div className="icon_container"><img src={`${(window.location.href.includes('unctad.org')) ? 'https://storage.unctad.org/2022-handbook_of_statistics/' : './'}assets/img/2022-handbook_of_statistics_plane.svg`} alt="Commodities icon" /></div>
                   <h3>
-                    <span className="highlight">Los viajes internacionales</span>
+                    <span className="highlight">Les voyages internationaux</span>
                     {' '}
-                    no se han recuperado a los niveles previos a la pandemia
+                    n&apos;ont pas retrouvé leur niveau d&apos;avant la pandémie.
                   </h3>
-                  <p>En 2021, las exportaciones de viajes aún representaban menos de la mitad (42&nbsp;%) de su valor en 2019.</p>
+                  <p>En 2021, les exportations de services de voyage représentaient encore moins de la moitié (42 %) de leur valeur de 2019.</p>
                 </div>
                 <div className="bottom">
-                  <a href="https://hbs.unctad.org/trade-in-services-by-category/" onClick={() => track('Click', 'card_7_link')} className="readmore" target="_blank" rel="noreferrer">Sumérjase en la información</a>
+                  <a href="https://hbs.unctad.org/trade-in-services-by-category/" onClick={() => track('Click', 'card_7_link')} className="readmore" target="_blank" rel="noreferrer">Plongez dans les données</a>
                   <div className="source">
-                    <em>Fuente:</em>
+                    <em>Source :</em>
                     {' '}
-                    Secretaría de la UNCTAD
+                    Secrétariat de la CNUCED
                   </div>
                 </div>
               </>
@@ -300,18 +300,18 @@ function App() {
                 }
                 <div className={`content ${isVisible ? 'visible' : ''}`}>
                   <h3>
-                    <span className="highlight">La diversificación de las exportaciones</span>
+                    <span className="highlight">La diversification des exportations</span>
                     {' '}
-                    sigue siendo un desafío para los países en desarrollo
+                    reste un défi pour les pays en développement
                   </h3>
-                  <p>Asia Occidental y África del Norte tenían la canasta de exportaciones menos diversificada, seguidas por Oceanía y África Subsahariana.</p>
+                  <p>L&apos;Asie occidentale et l&apos;Afrique du Nord avaient le panier d&apos;exportations le moins diversifié, suivies par l&apos;Océanie et l&apos;Afrique subsaharienne.</p>
                 </div>
                 <div className="bottom">
-                  <a href="https://hbs.unctad.org/trade-indicators/" onClick={() => track('Click', 'card_8_link')} className="readmore" target="_blank" rel="noreferrer">Sumérjase en la información</a>
+                  <a href="https://hbs.unctad.org/trade-indicators/" onClick={() => track('Click', 'card_8_link')} className="readmore" target="_blank" rel="noreferrer">Plongez dans les données</a>
                   <div className="source">
-                    <em>Fuente:</em>
+                    <em>Source :</em>
                     {' '}
-                    Secretaría de la UNCTAD
+                    Secrétariat de la CNUCED
                   </div>
                 </div>
               </>
@@ -333,19 +333,19 @@ function App() {
                 }
                 <div className={`content ${isVisible ? 'visible' : ''}`}>
                   <h3>
-                    <span className="highlight">El crecimiento económico</span>
+                    <span className="highlight">La croissance économique</span>
                     {' '}
-                    de los países menos adelantados en 2021 fue lento
+                    des pays les moins avancés a été lente en 2021
                   </h3>
-                  <NumberAnimation labels={['PMA', 'Global']} prefix="+" suffix="%" values={[2.0, 5.7]} decimal="," />
-                  <p>El crecimiento del PIB en los PMA estuvo muy por debajo del objetivo del 7&nbsp;% consagrado en la Agenda 2030 para el Desarrollo Sostenible de las Naciones Unidas.</p>
+                  <NumberAnimation labels={['PMA', 'Monde']} prefix="+" suffix="%" values={[2.0, 5.7]} decimal="," />
+                  <p>La croissance du PIB des PMA est loin d&apos;atteindre l&apos;objectif de 7 % inscrit dans le programme de développement durable des Nations Unies pour 2030.</p>
                 </div>
                 <div className="bottom">
-                  <a href="https://hbs.unctad.org/gross-domestic-product/" onClick={() => track('Click', 'card_9_link')} className="readmore" target="_blank" rel="noreferrer">Sumérjase en la información</a>
+                  <a href="https://hbs.unctad.org/gross-domestic-product/" onClick={() => track('Click', 'card_9_link')} className="readmore" target="_blank" rel="noreferrer">Plongez dans les données</a>
                   <div className="source">
-                    <em>Fuente:</em>
+                    <em>Source :</em>
                     {' '}
-                    Secretaría de la UNCTAD
+                    Secrétariat de la CNUCED
                   </div>
                 </div>
               </>
@@ -367,21 +367,21 @@ function App() {
                 }
                 <div className={`content ${isVisible ? 'visible' : ''}`}>
                   <h3>
-                    La population mondiale a atteint
+                    La población mundial alcanzó los
                     {' '}
-                    <span className="highlight">8 milliards</span>
+                    <span className="highlight">8 mil millones</span>
                     {' '}
-                    d&apos;habitants en novembre 2022
+                    de personas en noviembre de 2022
                   </h3>
                   <People />
-                  <p>Mais cette croissance est en baisse depuis la fin des années 1980. En 2021, elle a plongé à +0,87&nbsp;%, contre +1,05&nbsp;% en 2019.</p>
+                  <p>Pero el crecimiento ha ido disminuyendo desde finales de la década de 1980. En 2021, cayó a +0,87%, por debajo del +1,05% en 2019.</p>
                 </div>
                 <div className="bottom">
-                  <a href="https://hbs.unctad.org/total-and-urban-population/" onClick={() => track('Click', 'card_10_link')} className="readmore" target="_blank" rel="noreferrer">Sumérjase en la información</a>
+                  <a href="https://hbs.unctad.org/total-and-urban-population/" onClick={() => track('Click', 'card_10_link')} className="readmore" target="_blank" rel="noreferrer">Plongez dans les données</a>
                   <div className="source">
-                    <em>Fuente:</em>
+                    <em>Source :</em>
                     {' '}
-                    Secretaría de la UNCTAD
+                    Secrétariat de la CNUCED
                   </div>
                 </div>
               </>
@@ -404,12 +404,12 @@ function App() {
                 <div className={`content ${isVisible ? 'visible' : ''}`}>
                   <div className="icon_container"><img src={`${(window.location.href.includes('unctad.org')) ? 'https://storage.unctad.org/2022-handbook_of_statistics/' : './'}assets/img/2022-handbook_of_statistics_computer.svg`} alt="Commodities icon" /></div>
                   <h3>
-                    <div>Voir la version électronique du manuel.</div>
-                    <div className="highlight">Interagissez avec les données.</div>
+                    <div>Consulte la versión electrónica del Manual.</div>
+                    <div className="highlight">Interactuar con los datos.</div>
                   </h3>
-                  <a href="https://hbs.unctad.org/" onClick={() => track('Click', 'card_11_link')} className="readmore" target="_blank" rel="noreferrer">e-Handbook of Statistics 2022</a>
-                  <a href="https://unctad.org/webflyer/handbook-statistics-2022" onClick={() => track('Click', 'webflyer_link')} className="readmore" target="_blank" rel="noreferrer">Téléchargez le rapport (pdf)</a>
-                  <a href="https://www.youtube.com/watch?v=goQ_gEP3ihk" onClick={() => track('Click', 'video_link')} className="readmore" target="_blank" rel="noreferrer">Regarder la vidéo</a>
+                  <a href="https://hbs.unctad.org/" onClick={() => track('Click', 'card_11_link')} className="readmore" target="_blank" rel="noreferrer">Manual electrónico de estadísticas 2022</a>
+                  <a href="https://unctad.org/webflyer/handbook-statistics-2022" onClick={() => track('Click', 'webflyer_link')} className="readmore" target="_blank" rel="noreferrer">Descargar el informe (pdf)</a>
+                  <a href="https://www.youtube.com/watch?v=goQ_gEP3ihk" onClick={() => track('Click', 'video_link')} className="readmore" target="_blank" rel="noreferrer">Ver el vídeo</a>
                 </div>
               </>
             )}
