@@ -409,7 +409,7 @@ function App() {
                   </h3>
                   <a href="https://hbs.unctad.org/" onClick={() => track('Click', 'card_11_link')} className="readmore" target="_blank" rel="noreferrer">e-Handbook of Statistics 2022</a>
                   <a href="https://unctad.org/webflyer/handbook-statistics-2022" onClick={() => track('Click', 'webflyer_link')} className="readmore" target="_blank" rel="noreferrer">Téléchargez le rapport (pdf)</a>
-                  <a href="https://www.youtube.com/watch?v=goQ_gEP3ihk" onClick={() => track('Click', 'video_link')} className="readmore" target="_blank" rel="noreferrer">Regarder la vidéo</a>
+                  <a href="https://youtu.be/sCbI-bVX3kY" onClick={() => track('Click', 'video_link')} className="readmore" target="_blank" rel="noreferrer">Regarder la vidéo</a>
                 </div>
               </>
             )}
