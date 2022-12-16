@@ -4,6 +4,8 @@
 
 ## Used in
 * [UNCTAD releases key data report on global economic, trade and development trends](https://unctad.org/news/unctad-releases-key-data-report-global-economic-trade-and-development-trends)
+* [La UNCTAD publica un informe de datos clave sobre las tendencias económicas, comerciales y de desarrollo mundial](https://unctad.org/es/news/la-unctad-publica-un-informe-de-datos-clave-sobre-las-tendencias-economicas-comerciales-y-de)
+* [La CNUCED publie un rapport de données clés sur les tendances mondiales de l'économie, du commerce et du développement](https://unctad.org/fr/news/la-cnuced-publie-un-rapport-de-donnees-cles-sur-les-tendances-mondiales-de-leconomie-du)
 
 ## Rights of usage
 
