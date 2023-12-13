@@ -278,7 +278,9 @@ function App() {
                     {' '}
                     has not recovered to
                     {' '}
-                    <span className="nowrap">pre-pandemic levels</span>
+                    <span className="nowrap">pre-pandemic</span>
+                    {' '}
+                    levels
                   </h3>
                   <p>In 2021, travel exports were still less than half (42%) their value in 2019.</p>
                 </div>
