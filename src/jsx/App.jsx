@@ -78,7 +78,7 @@ function App() {
                   <img className="infograph" src={`${(window.location.href.includes('unctad.org')) ? 'https://storage.unctad.org/2022-handbook_of_statistics/' : './'}assets/img/2022-handbook_of_statistics_infograph.svg`} alt="Infograph" />
                 </div>
                 <div className="unctad_logo_container">
-                  <img src="https://unctad.org/sites/default/files/2022-11/unctad_logo.svg" alt="UNCTAD logo" />
+                  <img src={`${window.location.href.includes('unctad.org') ? 'https://storage.unctad.org/2022-handbook_of_statistics/' : './'}assets/img/unctad_logo.svg`} alt="UNCTAD logo" />
                 </div>
               </>
             )}
