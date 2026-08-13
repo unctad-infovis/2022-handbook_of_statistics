@@ -10,7 +10,7 @@ import IsVisible from 'react-is-visible';
 import easingFn from '../helpers/EasingFn.js';
 
 function NumberAnimation({
-  labels, prefix, suffix, values, decimal
+  labels, prefix = '', suffix = '', values, decimal = '.'
 }) {
   const divider = (Math.abs(values[1]) < Math.abs(values[0]) ? Math.abs(values[0]) : Math.abs(values[1]));
   return (
@@ -49,12 +49,6 @@ NumberAnimation.propTypes = {
   suffix: PropTypes.string,
   decimal: PropTypes.string,
   values: PropTypes.instanceOf(Array).isRequired
-};
-
-NumberAnimation.defaultProps = {
-  decimal: '.',
-  prefix: '',
-  suffix: ''
 };
 
 export default memo(NumberAnimation);
